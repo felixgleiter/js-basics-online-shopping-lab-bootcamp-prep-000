@@ -28,7 +28,7 @@ function viewCart() {
       array.push(cart[i].itemName + " at $ " + cart[i].itemPrice + ", " );
     }
     var stringArray = array.toString();
-    return "In your cart, you have " + cart[0].itemName + " at $" + cart[0].itemPrice + "," + stringArray + ", and " + cart[-1].itemName + " at $" + cart[-1].itemPrice + ".";
+    return "In your cart, you have " + cart[0].itemName + " at $" + cart[0].itemPrice + "," + stringArray + ", and " + cart[cart.length - 1].itemName + " at $" + cart[cart.length - 1].itemPrice + ".";
   }
 }
 
